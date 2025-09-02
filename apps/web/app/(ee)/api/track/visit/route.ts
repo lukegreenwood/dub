@@ -13,7 +13,7 @@ import { ipAddress, waitUntil } from "@vercel/functions";
 import { AxiomRequest, withAxiom } from "next-axiom";
 import { NextResponse } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 // POST /api/track/visit – Track a visit event from the client-side
 export const POST = withAxiom(async (req: AxiomRequest) => {
   try {

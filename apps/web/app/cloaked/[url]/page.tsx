@@ -5,7 +5,7 @@ import {
 } from "@dub/utils";
 import { getMetaTags } from "app/api/links/metatags/utils";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const fetchCache = "force-no-store";
 
 export async function generateMetadata({

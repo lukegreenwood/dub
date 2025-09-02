@@ -5,7 +5,7 @@ import { domainKeySchema } from "@/lib/zod/schemas/links";
 import { getSearchParams } from "@dub/utils";
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 // GET /api/links/random – get a random available link key for a given domain
 export const GET = async (req: NextRequest) => {
